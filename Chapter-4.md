@@ -41,7 +41,7 @@ add_action( "plugins_loaded" , "wordcount_load_textdomain" );
 
 এবার, একটা ফিল্টারের দিয়ে the_content কে নিয়ে কাজ করব।
 
-‌‌```php
+```php
 function wordcount_count_words( $content ) {
 	$stripped_content = strip_tags( $content );
 	$wordn = str_word_count( $stripped_content );
